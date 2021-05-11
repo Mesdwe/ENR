@@ -6,7 +6,14 @@ public class PickupItem : Interactable
 {
     new protected void OnMouseDown()
     {
-        base.OnMouseDown();
-        Destroy(gameObject);
+        bool pickable = base.OnMouseDown();
+        if(pickable)
+        {
+            Debug.Log("Picked up the " + item.name);
+            Debug.Log("This item is " + item.description);
+            Inventory.instance.Add(item);
+            Destroy(gameObject);
+        }
+
     }
 }

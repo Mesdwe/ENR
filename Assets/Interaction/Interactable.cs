@@ -4,8 +4,13 @@ using UnityEngine;
 
 public class Interactable : MonoBehaviour
 {
-    [SerializeField] private Material mat;
+    private Material mat;
     [SerializeField] protected Item item;
+
+    void Start()
+    {
+        mat = GetComponent<SpriteRenderer>().material;
+    }
     public void OnMouseEnter()
     {
         mat.SetInt("_Outline", 1);
@@ -16,8 +21,16 @@ public class Interactable : MonoBehaviour
         mat.SetInt("_Outline", 0);
     }
 
-    protected void OnMouseDown()
+    protected bool OnMouseDown()
     {
-        Debug.Log(item.description);
+        if(!item.pickable)
+        {
+            Debug.Log("This " + item.name + " is not pickable");
+            return false;
+        }
+        else
+        {
+            return true;
+        }
     }
 }

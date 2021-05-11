@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c5d21237bd266c4e9959a949be59e8c, type: 3}
   m_Name: TestB
   m_EditorClassIdentifier: 
-  name: Pickable
+  name: human
   icon: {fileID: 0}
-  description: Picked up
+  description: just a pickable human
+  pickable: 1
