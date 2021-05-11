@@ -4,8 +4,13 @@ using UnityEngine;
 
 public class Interactable : MonoBehaviour
 {
-    [SerializeField] private Material mat;
+    private Material mat;
     [SerializeField] protected Item item;
+
+    void Start()
+    {
+        mat = GetComponent<SpriteRenderer>().material;
+    }
     public void OnMouseEnter()
     {
         mat.SetInt("_Outline", 1);
