@@ -6,7 +6,7 @@ public class SceneItem : Interactable
 {
     [SerializeField] private Transform camTransform;
     [SerializeField] private float camZoomedSize;
-    [SerializeField] private GameObject zoomedObject;
+    //[SerializeField] private GameObject zoomedObject;
     public bool zoom;
     protected override void OnInteract()
     {
