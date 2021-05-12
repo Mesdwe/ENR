@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c5d21237bd266c4e9959a949be59e8c, type: 3}
   m_Name: TestA
   m_EditorClassIdentifier: 
-  name: A
+  name: zombie
   icon: {fileID: 21300000, guid: 76b3425c737aadd43bf432adcbe62651, type: 3}
-  description: This is a test
+  description: just a unpickable zombie
+  pickable: 1

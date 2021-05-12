@@ -4,9 +4,11 @@ using UnityEngine;
 
 public class PickupItem : Interactable
 {
-    new protected void OnMouseDown()
+    protected override void OnInteract()
     {
-        base.OnMouseDown();
+        Debug.Log("Picked up the " + item.name);
+        Debug.Log("This item is " + item.description);
+        Inventory.instance.Add(item);
         Destroy(gameObject);
     }
 }
