@@ -29,7 +29,7 @@ public class Inventory : MonoBehaviour
 
     public void Add (Item item)
     {
-        if(item.pickable == true)
+        if(item.interacttype == Item.InteractType.PickupItem)
         {
             items.Add(item);
         }
