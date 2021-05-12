@@ -23,6 +23,11 @@ public class Interactable : MonoBehaviour
 
     protected void OnMouseDown()
     {
+        OnInteract();
+    }
+
+    protected virtual void OnInteract()
+    {
         Debug.Log(item.description);
     }
 }
