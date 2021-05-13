@@ -26,10 +26,11 @@ public class Inventory : MonoBehaviour
     #endregion
 
     public List<Item> items = new List<Item>();
+    public BagItem cur_item = null;
 
     public void Add (Item item)
     {
-        if(item.pickable == true)
+        if(item.interacttype == Item.InteractType.PickupItem)
         {
             items.Add(item);
         }

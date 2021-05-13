@@ -4,7 +4,7 @@ using System.Collections;
 using System.Collections.Generic;
 
 
-public class NewBehaviourScript : MonoBehaviour
+public class OpeningController: MonoBehaviour
 {
     private int aa=0;
     public Animator ani;

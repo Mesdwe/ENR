@@ -916,8 +916,8 @@ GameObject:
   m_Component:
   - component: {fileID: 986788307}
   - component: {fileID: 986788310}
-  - component: {fileID: 986788308}
   - component: {fileID: 986788309}
+  - component: {fileID: 986788308}
   m_Layer: 0
   m_Name: Door
   m_TagString: Untagged
@@ -949,12 +949,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 986788306}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d2149aaed3e486f4f934c20352469583, type: 3}
+  m_Script: {fileID: 11500000, guid: 8b066b0c27c20ea41b795578a30c2947, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   item: {fileID: 11400000, guid: 91e5591985f65dc4a87cfe0e7833c67a, type: 2}
   camTransform: {fileID: 2023107364}
   camZoomedSize: 5
+  zoomedObject: {fileID: 0}
   zoom: 1
 --- !u!60 &986788309
 PolygonCollider2D:
@@ -2342,10 +2343,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3b3044cf7371362458efca79cf6294b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  item: {fileID: 11400000, guid: 7d7723bc7bffd9543af9f43553b01ff4, type: 2}
-  camTransform: {fileID: 0}
-  camZoomedSize: 0
-  zoom: 0
+  item: {fileID: 0}
 --- !u!212 &1139603509
 SpriteRenderer:
   m_ObjectHideFlags: 0
