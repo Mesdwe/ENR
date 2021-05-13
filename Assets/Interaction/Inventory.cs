@@ -10,7 +10,7 @@ public class Inventory : MonoBehaviour
 
     void Awake()
     {
-        if(instance == null)
+        if (instance == null)
         {
             instance = this;
             DontDestroyOnLoad(gameObject);
@@ -28,22 +28,25 @@ public class Inventory : MonoBehaviour
     public List<Item> items = new List<Item>();
     public BagItem cur_item = null;
 
-    public void Add (Item item)
+    public Transform iconList;
+    public GameObject buttonPrefab;
+
+    public void Add(Item item)
     {
-        if(item.interacttype == Item.InteractType.PickupItem)
-        {
-            items.Add(item);
-        }
-        Debug.Log("There are " + Show(items) + "in your bag");
+        items.Add(item);
+        GameObject bagItem = Instantiate(buttonPrefab, iconList);
+        bagItem.transform.SetParent(iconList);
+        bagItem.GetComponent<ButtonTest>().SetBagItem(item);
+        //Debug.Log("There are " + Show(items) + "in your bag");
     }
-    public void Remove (Item item)
+    public void Remove(Item item)
     {
         items.Remove(item);
     }
-    public string Show (List<Item> items)
+    public string Show(List<Item> items)
     {
         StringBuilder str = new StringBuilder();
-        foreach(Item item in items)
+        foreach (Item item in items)
         {
             str.Append(item.name);
             str.Append(" ");

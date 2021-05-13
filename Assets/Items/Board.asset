@@ -15,4 +15,4 @@ MonoBehaviour:
   name: Board
   icon: {fileID: 0}
   description: What's that
-  pickable: 0
+  interacttype: 4
