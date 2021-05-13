@@ -4,31 +4,28 @@ using System.Collections;
 using System.Collections.Generic;
 
 
-public class OpeningController: MonoBehaviour
+public class OpeningController : MonoBehaviour
 {
-    private int aa=0;
+    private int aa = 0;
     public Animator ani;
-    public float timer;
-    private bool ready =true;
+    public bool ready = true;
 
-    public void add(){
-        if(!ready) return;
+    public void add()
+    {
+        if (!ready) return;
         aa++;
-        ani.SetInteger("i",aa);
-        if(aa>4){
-            
-        }
+        ani.SetInteger("i", aa);
         StartCoroutine(CoolDown());
     }
     IEnumerator CoolDown()
     {
         ready = false;
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(2f);
         ready = true;
     }
-    
+
     public void AnimationTest()
     {
-       SceneManager.LoadScene(1);
+        SceneManager.LoadScene(1);
     }
 }
