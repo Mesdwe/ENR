@@ -16,7 +16,7 @@ public class OpeningController: MonoBehaviour
         aa++;
         ani.SetInteger("i",aa);
         if(aa>4){
-            SceneManager.LoadScene(1);
+            
         }
         StartCoroutine(CoolDown());
     }
@@ -25,5 +25,10 @@ public class OpeningController: MonoBehaviour
         ready = false;
         yield return new WaitForSeconds(1f);
         ready = true;
+    }
+    
+    public void AnimationTest()
+    {
+       SceneManager.LoadScene(1);
     }
 }

@@ -17,4 +17,10 @@ public class ButtonTest : MonoBehaviour
         Inventory.instance.cur_item = item;
         
     }
+
+    public void ClickTest()
+    {
+        Inventory.instance.cur_item = item;
+    }
+    
 }
