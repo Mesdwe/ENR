@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c5d21237bd266c4e9959a949be59e8c, type: 3}
   m_Name: GreenKey
   m_EditorClassIdentifier: 
-  name: New Item
-  icon: {fileID: 0}
+  name: Green_Circle
+  icon: {fileID: 21300000, guid: 8da5663facf65aa4e90c1b4d1551a340, type: 3}
   description: 
   interacttype: 5

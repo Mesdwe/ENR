@@ -10,7 +10,7 @@ public class BagItem : Interactable
 
     protected override void OnInteract()
     {
-        Inventory.instance.cur_item = this;
+        //Inventory.instance.cur_item = this;
         //manager.cur_item=this;
         Debug.Log("Now selected the " + Inventory.instance.cur_item.name);
     }

@@ -9,5 +9,12 @@ public class ButtonTest : MonoBehaviour
     {
         item = itemT;
         this.GetComponent<Image>().sprite = item.icon;
+        this.name = item.name;
+        
+    }
+    public void OnSelected()
+    {
+        Inventory.instance.cur_item = item;
+        
     }
 }

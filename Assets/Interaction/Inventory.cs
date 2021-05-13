@@ -26,18 +26,16 @@ public class Inventory : MonoBehaviour
     #endregion
 
     public List<Item> items = new List<Item>();
-    public BagItem cur_item = null;
-
-    public Transform iconList;
-    public GameObject buttonPrefab;
-
+    public Item cur_item = null;
+    public Transform IconList;
+    public GameObject Prefab_Button;
     public void Add(Item item)
     {
         items.Add(item);
-        GameObject bagItem = Instantiate(buttonPrefab, iconList);
-        bagItem.transform.SetParent(iconList);
-        bagItem.GetComponent<ButtonTest>().SetBagItem(item);
-        //Debug.Log("There are " + Show(items) + "in your bag");
+        GameObject bagItemPrefab = Instantiate(Prefab_Button,IconList);
+        bagItemPrefab.GetComponent<ButtonTest>().SetBagItem(item);
+        
+        //        Debug.Log("There are " + Show(items) + "in your bag");
     }
     public void Remove(Item item)
     {
