@@ -14,7 +14,6 @@ public class Interactable : MonoBehaviour
     public void OnMouseEnter()
     {
         mat.SetInt("_Outline", 1);
-
     }
     public void OnMouseExit()
     {

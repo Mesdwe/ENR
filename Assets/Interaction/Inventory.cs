@@ -26,6 +26,7 @@ public class Inventory : MonoBehaviour
     #endregion
 
     public List<Item> items = new List<Item>();
+    public BagItem cur_item = null;
 
     public void Add (Item item)
     {

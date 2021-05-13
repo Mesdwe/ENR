@@ -4,10 +4,14 @@ using UnityEngine;
 
 public class BagItem : Interactable
 {
-    public bool selected = false;
+    public Inventory manager;
+
+    //manager=GameObject.Find("Inventory").GetComponent<Inventory>();
+
     protected override void OnInteract()
     {
-        selected = !selected;
-        Debug.Log("Now it is " + selected + " selected");
+        Inventory.instance.cur_item = this;
+        //manager.cur_item=this;
+        Debug.Log("Now selected the " + Inventory.instance.cur_item.name);
     }
 }
