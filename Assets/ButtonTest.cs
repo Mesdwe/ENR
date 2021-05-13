@@ -10,4 +10,10 @@ public class ButtonTest : MonoBehaviour
         item = itemT;
         this.GetComponent<Image>().sprite = item.icon;
     }
+
+    public void ClickTest()
+    {
+        Inventory.instance.cur_item = item;
+    }
+    
 }
