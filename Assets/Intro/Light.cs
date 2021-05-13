@@ -9,7 +9,7 @@ public class Light : SceneItem
     {
         //wait perhaps
         //jump
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene(2);
         
     }
 }

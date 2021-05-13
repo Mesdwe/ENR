@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PickupItem : Interactable
 {
+    public GameObject bagItemPrefab;
     protected override void OnInteract()
     {
         Debug.Log("Picked up the " + item.name);
