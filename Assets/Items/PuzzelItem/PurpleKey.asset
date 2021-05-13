@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: PurpleKey
   m_EditorClassIdentifier: 
   name: Purple_Circle
-  icon: {fileID: 21300000, guid: c97a7731df961524894d0d9b0dfa511b, type: 3}
+  icon: {fileID: 21300000, guid: 6401ccd0f933fe143bfc31eda7291c28, type: 3}
   description: Key
   interacttype: 0

@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: OrangeKey
   m_EditorClassIdentifier: 
   name: Orange_Circle
-  icon: {fileID: 21300000, guid: fb20545bed2357542be4afa1d090bba1, type: 3}
+  icon: {fileID: 21300000, guid: bbc9d2c5cd678dd49a32d2f947f86724, type: 3}
   description: Key
   interacttype: 0
